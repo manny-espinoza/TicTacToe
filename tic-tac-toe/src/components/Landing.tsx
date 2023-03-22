@@ -4,7 +4,7 @@ type Props = {};
 
 export default function tictactoe({}: Props) {
   function Square({ value, onClick }) {
-    return <button onClick={onClick}>{value}</button>;
+    return <button className="cell" onClick={onClick}>{value}</button>;
   }
 
   function Board() {
@@ -25,9 +25,9 @@ export default function tictactoe({}: Props) {
     let status;
 
     if (winner) {
-      status = `Winner: ${winner}`;
+      status = `WINNER: ${winner}`;
     } else {
-      status = `Next player: ${isX ? "X" : "O"}`;
+      status = `Next Player: ${isX ? "X" : "O"}`;
     }
 
     const handleRestart = () => {
@@ -40,25 +40,25 @@ export default function tictactoe({}: Props) {
     };
 
     return (
-      <div className="text-center py-20">
-        <h1>Tic Tac Toe</h1>
-        <div>
+      <div className="page">
+        <h1 className="heading">TIC TAC TOE</h1>
+        <div className="board-row">
           {renderSquare(0)}
           {renderSquare(1)}
           {renderSquare(2)}
         </div>
-        <div>
+        <div className="board-row">
           {renderSquare(3)}
           {renderSquare(4)}
           {renderSquare(5)}
         </div>
-        <div>
+        <div className="board-row">
           {renderSquare(6)}
           {renderSquare(7)}
           {renderSquare(8)}
         </div>
-        <div>{status}</div>
-        <button onClick={handleRestart}>Restart Game!</button>
+        <div className="status">{status}</div>
+        <button className="restart" onClick={handleRestart}>Restart Game!</button>
       </div>
     );
   }
