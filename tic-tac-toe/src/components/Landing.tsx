@@ -4,7 +4,11 @@ type Props = {};
 
 export default function tictactoe({}: Props) {
   function Square({ value, onClick }) {
-    return <button className="cell" onClick={onClick}>{value}</button>;
+    return (
+      <button className="cell" onClick={onClick}>
+        {value}
+      </button>
+    );
   }
 
   function Board() {
@@ -58,7 +62,9 @@ export default function tictactoe({}: Props) {
           {renderSquare(8)}
         </div>
         <div className="status">{status}</div>
-        <button className="restart" onClick={handleRestart}>Restart Game!</button>
+        <button className="restart" onClick={handleRestart}>
+          Restart Game!
+        </button>
       </div>
     );
   }

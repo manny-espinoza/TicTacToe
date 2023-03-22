@@ -1,10 +1,15 @@
 * {
-  background-color: rgb(138, 138, 138);
+  background-color: rgb(140, 140, 140);
   text-align: center;
 }
 
 .heading {
-  background-image: linear-gradient(to right, rgb(138, 138, 138),rgb(255, 255, 255),rgb(138, 138, 138));
+  background-image: linear-gradient(
+    to right,
+    rgb(140, 140, 140),
+    rgb(255, 255, 255),
+    rgb(140, 140, 140)
+  );
   font-family: "Poppins", sans-serif;
   font-size: 80px;
   font-weight: 200;
@@ -13,15 +18,25 @@
 }
 
 .cell {
-  font-family: 'Finger Paint', cursive;
+  font-family: "Finger Paint", cursive;
   font-size: 78px;
   height: 120px;
   width: 120px;
   padding-bottom: 29px;
 }
 
+.cell:hover {
+  background-color: rgb(160, 160, 160);
+  cursor: pointer;
+}
+
 .status {
-  background-image: linear-gradient(to right, rgb(138, 138, 138),rgb(255, 255, 255),rgb(138, 138, 138));
+  background-image: linear-gradient(
+    to right,
+    rgb(140, 140, 140),
+    rgb(255, 255, 255),
+    rgb(140, 140, 140)
+  );
   font-family: "Poppins", sans-serif;
   font-size: 30px;
   font-weight: 400;
@@ -30,7 +45,7 @@
 }
 
 .restart {
-  background-color: rgba(255, 0, 0, 0.700);
+  background-color: rgba(255, 0, 0, 0.6);
   font-family: "Poppins", sans-serif;
   font-size: 30px;
   font-weight: 500;
@@ -38,4 +53,9 @@
   width: 250px;
   padding-bottom: 4px;
   border-radius: 15px;
+}
+
+.restart:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+  cursor: pointer;
 }
