@@ -1,0 +1,41 @@
+* {
+  background-color: rgb(138, 138, 138);
+  text-align: center;
+}
+
+.heading {
+  background-image: linear-gradient(to right, rgb(138, 138, 138),rgb(255, 255, 255),rgb(138, 138, 138));
+  font-family: "Poppins", sans-serif;
+  font-size: 80px;
+  font-weight: 200;
+  padding: 10px 0px;
+  margin-bottom: 40px;
+}
+
+.cell {
+  font-family: 'Finger Paint', cursive;
+  font-size: 78px;
+  height: 120px;
+  width: 120px;
+  padding-bottom: 29px;
+}
+
+.status {
+  background-image: linear-gradient(to right, rgb(138, 138, 138),rgb(255, 255, 255),rgb(138, 138, 138));
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 20px 0px;
+  margin: 40px 0px;
+}
+
+.restart {
+  background-color: rgba(255, 0, 0, 0.705);
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  height: 80px;
+  width: 250px;
+  padding-bottom: 4px;
+  border-radius: 15px;
+}
