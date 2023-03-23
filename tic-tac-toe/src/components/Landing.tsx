@@ -31,7 +31,7 @@ export default function tictactoe({}: Props) {
     if (winner) {
       status = `WINNER: ${winner}`;
     } else {
-      status = `Next Player: ${isX ? "X" : "O"}`;
+      status = `Current Turn: ${isX ? "X" : "O"}`;
     }
 
     const handleRestart = () => {
